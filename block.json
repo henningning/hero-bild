@@ -1,0 +1,122 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "hr/hero-bild",
+  "version": "1.4.0",
+  "title": "Hero-Bild",
+  "category": "media",
+  "icon": "format-image",
+  "description": "Separates Hero-Bild für Beiträge, Seiten und Kategorie-/Taxonomie-Archive.",
+  "textdomain": "hero-bild",
+  "usesContext": [
+    "postId",
+    "postType",
+    "queryId"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "full",
+      "wide"
+    ],
+    "anchor": true,
+    "className": true
+  },
+  "attributes": {
+    "useGlobalSettings": {
+      "type": "boolean",
+      "default": true
+    },
+    "imageSource": {
+      "type": "string",
+      "default": "auto"
+    },
+    "widthMode": {
+      "type": "string",
+      "default": "full"
+    },
+    "maxWidth": {
+      "type": "number",
+      "default": 1200
+    },
+    "heightDesktop": {
+      "type": "number",
+      "default": 300
+    },
+    "heightTablet": {
+      "type": "number",
+      "default": 220
+    },
+    "heightMobile": {
+      "type": "number",
+      "default": 150
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center"
+    },
+    "radius": {
+      "type": "number",
+      "default": 0
+    },
+    "hoverEffect": {
+      "type": "string",
+      "default": "zoom"
+    },
+    "zoomPercent": {
+      "type": "number",
+      "default": 4
+    },
+    "duration": {
+      "type": "number",
+      "default": 400
+    },
+    "showImageInfo": {
+      "type": "boolean",
+      "default": true
+    },
+    "infoPosition": {
+      "type": "string",
+      "default": "bottom-right"
+    },
+    "infoLabel": {
+      "type": "string",
+      "default": "Informationen zum Bild"
+    },
+    "infoBackground": {
+      "type": "string",
+      "default": "#062051"
+    },
+    "infoTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "infoPanelBackground": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "infoPanelTextColor": {
+      "type": "string",
+      "default": "#202a36"
+    },
+    "infoFontSize": {
+      "type": "number",
+      "default": 13
+    },
+    "infoPadding": {
+      "type": "number",
+      "default": 12
+    },
+    "infoOffset": {
+      "type": "number",
+      "default": 12
+    },
+    "infoRadius": {
+      "type": "number",
+      "default": 6
+    }
+  },
+  "editorScript": "hr-hero-editor",
+  "style": "hr-hero-style",
+  "viewScript": "file:./assets/frontend.js"
+}
